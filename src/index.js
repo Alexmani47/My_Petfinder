@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function fetchPets() {
-    fetch("http://localhost:3000/pets")
+    fetch("https://my-petfinder.onrender.com/pets")
         .then(response => response.json())
         .then(pets => displayPets(pets));
 }
@@ -65,7 +65,7 @@ function showPetDetails(pet) {
 }
 
 function adoptPet(petId) {
-    fetch(`http://localhost:3000/pets/${petId}`, {
+    fetch(`https://my-petfinder.onrender.com/pets/${petId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ adopted: true })
