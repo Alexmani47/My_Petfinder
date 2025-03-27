@@ -1,0 +1,110 @@
+
+body {
+    background: #121212;
+    color: #f1eded;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    width: 30%;
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+main {
+    width: 65%;
+    padding: 10px;
+}
+
+
+#pet-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pet-item {
+    background: #222;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.pet-item span {
+    color: red;
+    font-weight: bold;
+}
+
+
+.pet-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+
+#pet-details {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.pet-detail-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #ccc;
+}
+
+
+button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+
+.adopt-btn {
+    background: #28a745;
+}
+
+.adopt-btn:hover {
+    background: #218838;
+}
+
+.adopted {
+    background: gray;
+    pointer-events: none;
+}
